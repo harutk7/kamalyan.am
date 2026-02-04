@@ -1,0 +1,21 @@
+# Development Dockerfile with hot reload
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Install Python for the server
+RUN apk add --no-cache python3 py3-pip
+
+# Copy package files
+COPY package*.json ./
+RUN npm install
+
+# Copy website files
+COPY website/ ./
+COPY assets/ ./assets/
+
+# Expose port
+EXPOSE 9999
+
+# Start development server
+CMD ["python3", "server.py"]
