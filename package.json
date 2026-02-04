@@ -1,0 +1,30 @@
+{
+  "name": "kamalyan-consulting-website",
+  "version": "1.0.0",
+  "description": "Kamalyan Consulting website with Playwright tests",
+  "scripts": {
+    "start": "python3 website/server.py",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:headed": "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium-desktop",
+    "test:firefox": "playwright test --project=firefox-desktop",
+    "test:webkit": "playwright test --project=webkit-desktop",
+    "test:mobile": "playwright test --project=mobile-chrome --project=mobile-safari",
+    "install:browsers": "playwright install",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.1"
+  },
+  "keywords": [
+    "environmental",
+    "consulting",
+    "website",
+    "playwright",
+    "testing"
+  ],
+  "author": "Kamalyan Consulting",
+  "license": "MIT"
+}

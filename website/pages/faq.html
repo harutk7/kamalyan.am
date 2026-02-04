@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Kamalyan Consulting</title>
+    <meta name="description" content="Frequently asked questions about our environmental consulting services, processes, and expertise.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="../../assets/logos/symbol/k-symbol-green.svg">
+    <style>
+        .accordion-item { border-bottom: 1px solid #e0e0e0; }
+        .accordion-header { 
+            width: 100%; 
+            padding: 24px 0; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            background: none; 
+            border: none; 
+            cursor: pointer; 
+            text-align: left;
+            font-size: 18px;
+            font-weight: 500;
+            color: #1a1a1a;
+            transition: color 0.2s;
+        }
+        .accordion-header:hover { color: #2e7d32; }
+        .accordion-icon { 
+            width: 24px; 
+            height: 24px; 
+            flex-shrink: 0;
+            transition: transform 0.3s;
+        }
+        .accordion-item.active .accordion-icon { transform: rotate(180deg); }
+        .accordion-content { 
+            max-height: 0; 
+            overflow: hidden; 
+            transition: max-height 0.3s ease-out, padding 0.3s;
+        }
+        .accordion-item.active .accordion-content { 
+            max-height: 500px; 
+            padding-bottom: 24px;
+        }
+        .accordion-content p { 
+            font-size: 15px; 
+            color: #666; 
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="../index.html" class="logo">
+                    <img src="../../assets/logos/horizontal/logo-kamalyan-horizontal-green.svg" alt="Kamalyan Consulting" class="logo-img">
+                </a>
+                
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">Who we are</a></li>
+                        <li class="nav-item"><a href="publications.html" class="nav-link">Publications</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact us</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="language-selector">
+                        <button class="lang-btn" id="langBtn">
+                            <span>English</span>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="../index.html" class="logo">
+                <img src="../../assets/logos/horizontal/logo-kamalyan-horizontal-green.svg" alt="Kamalyan Consulting" class="logo-img">
+            </a>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a href="../index.html" class="mobile-nav-link">Home</a></li>
+                <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link">Services</a></li>
+                <li class="mobile-nav-item"><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
+                <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">Who we are</a></li>
+                <li class="mobile-nav-item"><a href="publications.html" class="mobile-nav-link">Publications</a></li>
+                <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-footer">
+            <div class="mobile-contact">
+                <a href="tel:+37412345678" class="mobile-contact-link">+374 12 345 678</a>
+                <a href="mailto:info@kamalyan.am" class="mobile-contact-link">info@kamalyan.am</a>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 40vh; margin-top: 72px;">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1920&q=80" alt="FAQ" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Frequently Asked<br>Questions</h1>
+                <p class="hero-subtitle">Find answers to common questions about our services</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" style="padding: 80px 0;">
+        <div class="container">
+            <div class="faq-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 64px;">
+                <!-- General Questions -->
+                <div class="faq-category">
+                    <h2 style="font-size: 24px; font-weight: 600; margin-bottom: 24px; color: #1a1a1a;">General Questions</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>What services does Kamalyan Consulting offer?</span>
+                                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>We offer comprehensive environmental consulting services including Environmental Impact Assessments (EIA), water resource management, air quality monitoring, waste management solutions, forest conservation planning, regulatory compliance consulting, and sustainability planning. Our team of experts can guide you through every stage of your environmental project.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>How long has Kamalyan Consulting been in business?</span>
+                                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Kamalyan Consulting was founded in 1999, giving us over 25 years of experience in environmental consulting. Since then, we've completed more than 150 projects and built a reputation for scientific excellence and reliable service across Armenia and the region.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>What industries do you work with?</span>
+                                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>We work with a diverse range of clients including government agencies, municipalities, private corporations, non-profit organizations, international development agencies, and individual landowners. Our expertise spans across construction, manufacturing, energy, agriculture, and conservation sectors.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Are your consultants certified?</span>
+                                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Yes, all our senior consultants hold advanced degrees in their respective fields and maintain professional certifications. Our company is ISO 14001 and ISO 9001 certified, and we are proud members of the International Association for Impact Assessment (IAIA).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Questions -->
+                <div class="faq-category">
+                    <h2 style="font-size: 24px; font-weight: 600; margin-bottom: 24px; color: #1a1a1a;">Services & Process</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>How long does an Environmental Impact Assessment take?</span>
+                                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>The duration of an EIA depends on the project's complexity and scope. A simple assessment might take 2-3 months, while more complex projects can take 6-12 months. We provide a detailed timeline during our initial consultation based on your specific project requirements.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>What is the typical project process?</span>
+                                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Our typical process includes: 1) Initial consultation to understand your needs, 2) Site assessment and data collection, 3) Analysis and report preparation, 4) Review meetings and revisions, 5) Final documentation delivery, and 6) Ongoing support as needed. We maintain clear communication throughout each phase.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Do you provide ongoing monitoring services?</span>
+                                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Yes, we offer comprehensive monitoring services including water quality testing, air quality monitoring, soil analysis, and ecological surveys. We can establish long-term monitoring programs tailored to your project's specific requirements and regulatory obligations.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Can you help with regulatory compliance?</span>
+                                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Absolutely. Regulatory compliance is one of our core services. We help clients understand and meet all relevant environmental regulations, obtain necessary permits, prepare compliance reports, and navigate inspections. Our team stays current with all changes in environmental legislation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing & Contact -->
+                <div class="faq-category">
+                    <h2 style="font-size: 24px; font-weight: 600; margin-bottom: 24px; color: #1a1a1a;">Pricing & Contact</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>How do you charge for your services?</span>
+                                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Our pricing depends on the scope and complexity of the project. We offer both fixed-price contracts for well-defined projects and time-and-materials billing for ongoing consulting services. We provide detailed quotes after understanding your specific needs during an initial consultation.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Do you offer free consultations?</span>
+                                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Yes, we offer a free initial consultation to discuss your project needs, explain our services, and provide a preliminary assessment of how we can help. This consultation can be conducted in person, by phone, or via video conference, whichever is most convenient for you.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>How can I get a quote for my project?</span>
+                                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>You can request a quote by filling out the contact form on our website, calling us at +374 12 345 678, or sending an email to info@kamalyan.am. Please provide as much detail as possible about your project so we can give you an accurate estimate.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Do you work on international projects?</span>
+                                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Yes, while we're based in Armenia, we have experience working on projects throughout the region and internationally. Our team includes consultants fluent in multiple languages, and we're familiar with various international environmental standards and protocols.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" style="padding: 80px 0; background: #2e7d32; color: white;">
+        <div class="container" style="text-align: center;">
+            <h2 style="font-size: 32px; font-weight: 600; margin-bottom: 16px;">Still have questions?</h2>
+            <p style="font-size: 18px; margin-bottom: 32px; opacity: 0.9;">Our team is here to help. Get in touch with us for personalized assistance.</p>
+            <a href="contact.html" style="display: inline-block; padding: 14px 32px; background: white; color: #2e7d32; text-decoration: none; border-radius: 8px; font-weight: 500; transition: transform 0.2s;">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="footer-logo">
+                        <img src="../../assets/logos/horizontal/logo-kamalyan-horizontal-dark.svg" alt="Kamalyan Consulting" class="footer-logo-img">
+                    </a>
+                    <p class="footer-tagline">Environmental consulting for a sustainable future</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">Who we are</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="legal.html">Legal notice</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="cookies.html">Cookie policy</a></li>
+                        <li><a href="terms.html">Terms and conditions</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2024 Kamalyan Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Accordion functionality
+        document.querySelectorAll('.accordion-header').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all items
+                document.querySelectorAll('.accordion-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

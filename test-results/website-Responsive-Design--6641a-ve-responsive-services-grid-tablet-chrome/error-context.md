@@ -1,0 +1,333 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "Kamalyan Consulting" [ref=e5]:
+        - /url: index.html
+        - img "Kamalyan Consulting" [ref=e6]
+      - navigation [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10]:
+              - /url: index.html
+          - listitem [ref=e11]:
+            - link "Services" [ref=e12]:
+              - /url: pages/services.html
+          - listitem [ref=e13]:
+            - link "Portfolio" [ref=e14]:
+              - /url: pages/portfolio.html
+          - listitem [ref=e15]:
+            - link "Who we are" [ref=e16]:
+              - /url: pages/about.html
+          - listitem [ref=e17]:
+            - link "Publications" [ref=e18]:
+              - /url: pages/publications.html
+          - listitem [ref=e19]:
+            - link "Contact us" [ref=e20]:
+              - /url: pages/contact.html
+      - button "English" [ref=e23] [cursor=pointer]:
+        - generic [ref=e24]: English
+        - img [ref=e25]
+  - generic [ref=e27]:
+    - generic [ref=e28]:
+      - link "Kamalyan Consulting" [ref=e29]:
+        - /url: index.html
+        - img "Kamalyan Consulting" [ref=e30]
+      - button "Close menu" [ref=e31] [cursor=pointer]:
+        - img [ref=e32]
+    - navigation [ref=e34]:
+      - list [ref=e35]:
+        - listitem [ref=e36]:
+          - link "Home" [ref=e37]:
+            - /url: index.html
+        - listitem [ref=e38]:
+          - link "Services" [ref=e39]:
+            - /url: pages/services.html
+        - listitem [ref=e40]:
+          - link "Portfolio" [ref=e41]:
+            - /url: pages/portfolio.html
+        - listitem [ref=e42]:
+          - link "Who we are" [ref=e43]:
+            - /url: pages/about.html
+        - listitem [ref=e44]:
+          - link "Publications" [ref=e45]:
+            - /url: pages/publications.html
+        - listitem [ref=e46]:
+          - link "Contact us" [ref=e47]:
+            - /url: pages/contact.html
+    - generic [ref=e49]:
+      - link "+374 12 345 678" [ref=e50]:
+        - /url: tel:+37412345678
+        - img [ref=e51]
+        - text: +374 12 345 678
+      - link "info@kamalyan.am" [ref=e53]:
+        - /url: mailto:info@kamalyan.am
+        - img [ref=e54]
+        - text: info@kamalyan.am
+  - generic [ref=e57]:
+    - img "Nature landscape" [ref=e59]
+    - generic [ref=e62]:
+      - heading "Text about generally who we are and what we provide" [level=1] [ref=e63]:
+        - text: Text about generally
+        - text: who we are and what
+        - text: we provide
+      - paragraph [ref=e64]: Environmental consulting services for a sustainable future
+      - generic [ref=e65]:
+        - link "Our Services" [ref=e66] [cursor=pointer]:
+          - /url: pages/services.html
+        - link "Contact Us" [ref=e67] [cursor=pointer]:
+          - /url: pages/contact.html
+  - generic [ref=e69]:
+    - generic [ref=e70]:
+      - heading "Our Services" [level=2] [ref=e71]
+      - paragraph [ref=e72]: Comprehensive environmental solutions tailored to your needs
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - img [ref=e76]
+        - heading "Project development and relevant documentation of harmful emissions into the air" [level=3] [ref=e80]
+        - paragraph [ref=e81]: Complete environmental impact assessments and documentation for air quality management.
+        - link "Learn more" [ref=e82]:
+          - /url: pages/services.html
+          - text: Learn more
+          - img [ref=e83]
+      - generic [ref=e85]:
+        - img [ref=e87]
+        - heading "Development of water use and protection measures documentation" [level=3] [ref=e91]
+        - paragraph [ref=e92]: Strategic planning and documentation for sustainable water resource management.
+        - link "Learn more" [ref=e93]:
+          - /url: pages/services.html
+          - text: Learn more
+          - img [ref=e94]
+      - generic [ref=e96]:
+        - img [ref=e98]
+        - heading "Certification of waste materials" [level=3] [ref=e102]
+        - paragraph [ref=e103]: Professional waste classification and certification services for regulatory compliance.
+        - link "Learn more" [ref=e104]:
+          - /url: pages/services.html
+          - text: Learn more
+          - img [ref=e105]
+      - generic [ref=e107]:
+        - img [ref=e109]
+        - heading "Hazardous waste licensing and monitoring of ecology" [level=3] [ref=e113]
+        - paragraph [ref=e114]: Comprehensive hazardous waste management and ecological monitoring solutions.
+        - link "Learn more" [ref=e115]:
+          - /url: pages/services.html
+          - text: Learn more
+          - img [ref=e116]
+      - generic [ref=e118]:
+        - img [ref=e120]
+        - heading "Development of regulatory documents in the field of ecology" [level=3] [ref=e124]
+        - paragraph [ref=e125]: Expert guidance on environmental regulations and compliance documentation.
+        - link "Learn more" [ref=e126]:
+          - /url: pages/services.html
+          - text: Learn more
+          - img [ref=e127]
+      - generic [ref=e129]:
+        - img [ref=e131]
+        - heading "Development of projects for the provision of mineral resources and relevant documents" [level=3] [ref=e135]
+        - paragraph [ref=e136]: Strategic mineral resource development planning and documentation services.
+        - link "Learn more" [ref=e137]:
+          - /url: pages/services.html
+          - text: Learn more
+          - img [ref=e138]
+    - link "View All Services" [ref=e141] [cursor=pointer]:
+      - /url: pages/services.html
+  - generic [ref=e144]:
+    - img "Team member" [ref=e146]
+    - generic [ref=e147]:
+      - heading "Name Family" [level=2] [ref=e148]
+      - paragraph [ref=e149]: Founder & CEO
+      - generic [ref=e150]:
+        - paragraph [ref=e151]: With over 20 years of experience in environmental consulting, we provide comprehensive solutions for businesses and organizations seeking to minimize their environmental impact while maintaining regulatory compliance.
+        - paragraph [ref=e152]: Our team of experts specializes in environmental impact assessments, waste management, and sustainable development strategies.
+      - link "Learn More" [ref=e153] [cursor=pointer]:
+        - /url: pages/about.html
+  - generic [ref=e155]:
+    - generic [ref=e156]:
+      - heading "Our Portfolio" [level=2] [ref=e157]
+      - paragraph [ref=e158]: Explore our recent environmental projects
+    - generic [ref=e159]:
+      - generic [ref=e161]:
+        - img "Lake project" [ref=e162]
+        - generic [ref=e163]:
+          - heading "Lake Restoration Project" [level=3] [ref=e164]
+          - paragraph [ref=e165]: Water Management
+          - link "View Project" [ref=e166]:
+            - /url: pages/portfolio.html
+      - generic [ref=e168]:
+        - img "Mountain project" [ref=e169]
+        - generic [ref=e170]:
+          - heading "Mountain Conservation" [level=3] [ref=e171]
+          - paragraph [ref=e172]: Environmental Assessment
+          - link "View Project" [ref=e173]:
+            - /url: pages/portfolio.html
+      - generic [ref=e175]:
+        - img "Forest project" [ref=e176]
+        - generic [ref=e177]:
+          - heading "Forest Ecosystem Study" [level=3] [ref=e178]
+          - paragraph [ref=e179]: Ecology Research
+          - link "View Project" [ref=e180]:
+            - /url: pages/portfolio.html
+      - generic [ref=e182]:
+        - img "Waterfall project" [ref=e183]
+        - generic [ref=e184]:
+          - heading "Waterfall Protection Zone" [level=3] [ref=e185]
+          - paragraph [ref=e186]: Natural Reserve
+          - link "View Project" [ref=e187]:
+            - /url: pages/portfolio.html
+    - link "View All Projects" [ref=e189] [cursor=pointer]:
+      - /url: pages/portfolio.html
+  - generic [ref=e191]:
+    - generic [ref=e192]:
+      - heading "Our Clients" [level=2] [ref=e193]
+      - paragraph [ref=e194]: Trusted by leading organizations
+    - generic [ref=e195]:
+      - img [ref=e198]
+      - img [ref=e202]
+      - img [ref=e206]
+      - img [ref=e210]
+      - img [ref=e214]
+      - img [ref=e218]
+  - generic [ref=e221]:
+    - generic [ref=e222]:
+      - heading "Testimonials from clients" [level=2] [ref=e223]
+      - paragraph [ref=e224]: What our clients say about us
+    - generic [ref=e225]:
+      - generic [ref=e226]:
+        - generic [ref=e227]:
+          - img "Client avatar" [ref=e229]
+          - generic [ref=e230]:
+            - paragraph [ref=e231]: "\"Kamalyan Consulting provided exceptional service for our environmental impact assessment. Their expertise and professionalism exceeded our expectations.\""
+            - generic [ref=e232]:
+              - generic [ref=e233]: Gurgen Arustamyan
+              - text: CEO, TechCorp
+        - generic [ref=e234]:
+          - img "Client avatar" [ref=e236]
+          - generic [ref=e237]:
+            - paragraph [ref=e238]: "\"The team's knowledge of environmental regulations and commitment to sustainable solutions made our project a success. Highly recommended!\""
+            - generic [ref=e239]:
+              - generic [ref=e240]: Anna Smith
+              - text: Director, GreenEnergy
+        - generic [ref=e241]:
+          - img "Client avatar" [ref=e243]
+          - generic [ref=e244]:
+            - paragraph [ref=e245]: "\"Working with Kamalyan was a game-changer for our waste management strategy. They delivered comprehensive solutions on time and within budget.\""
+            - generic [ref=e246]:
+              - generic [ref=e247]: Michael Johnson
+              - text: Operations Manager, InduCorp
+      - generic:
+        - button "Previous testimonial" [ref=e248] [cursor=pointer]:
+          - img [ref=e249]
+        - button "Next testimonial" [ref=e251] [cursor=pointer]:
+          - img [ref=e252]
+      - generic [ref=e254]:
+        - button [ref=e255] [cursor=pointer]
+        - button [ref=e256] [cursor=pointer]
+        - button [ref=e257] [cursor=pointer]
+  - generic [ref=e260]:
+    - heading "We make your way easy" [level=2] [ref=e261]
+    - paragraph [ref=e262]: Get started with our environmental consulting services today
+    - link "Get in Touch" [ref=e264] [cursor=pointer]:
+      - /url: pages/contact.html
+  - generic [ref=e267]:
+    - generic [ref=e268]:
+      - heading "Call us or write something" [level=2] [ref=e269]
+      - paragraph [ref=e270]: We're here to help with your environmental needs
+      - generic [ref=e271]:
+        - generic [ref=e272]:
+          - img [ref=e274]
+          - generic [ref=e277]:
+            - generic [ref=e278]: Address
+            - generic [ref=e279]: Yerevan, Armenia
+        - generic [ref=e280]:
+          - img [ref=e282]
+          - generic [ref=e284]:
+            - generic [ref=e285]: Phone
+            - link "+374 12 345 678" [ref=e286]:
+              - /url: tel:+37412345678
+        - generic [ref=e287]:
+          - img [ref=e289]
+          - generic [ref=e292]:
+            - generic [ref=e293]: Email
+            - link "info@kamalyan.am" [ref=e294]:
+              - /url: mailto:info@kamalyan.am
+    - generic [ref=e296]:
+      - generic [ref=e297]:
+        - generic [ref=e298]: Name
+        - textbox "Name" [ref=e299]
+      - generic [ref=e300]:
+        - generic [ref=e301]: Email
+        - textbox "Email" [ref=e302]
+      - generic [ref=e303]:
+        - generic [ref=e304]: Subject
+        - textbox "Subject" [ref=e305]
+      - generic [ref=e306]:
+        - generic [ref=e307]: Message
+        - textbox "Message" [ref=e308]
+      - button "Send Message" [ref=e309] [cursor=pointer]
+  - contentinfo [ref=e310]:
+    - generic [ref=e311]:
+      - generic [ref=e312]:
+        - generic [ref=e313]:
+          - link "Kamalyan Consulting" [ref=e314]:
+            - /url: index.html
+            - img "Kamalyan Consulting" [ref=e315]
+          - paragraph [ref=e316]: Environmental consulting for a sustainable future
+        - generic [ref=e317]:
+          - heading "Quick Links" [level=4] [ref=e318]
+          - list [ref=e319]:
+            - listitem [ref=e320]:
+              - link "Home" [ref=e321]:
+                - /url: index.html
+            - listitem [ref=e322]:
+              - link "Services" [ref=e323]:
+                - /url: pages/services.html
+            - listitem [ref=e324]:
+              - link "Portfolio" [ref=e325]:
+                - /url: pages/portfolio.html
+            - listitem [ref=e326]:
+              - link "Who we are" [ref=e327]:
+                - /url: pages/about.html
+            - listitem [ref=e328]:
+              - link "Contact us" [ref=e329]:
+                - /url: pages/contact.html
+        - generic [ref=e330]:
+          - heading "Legal" [level=4] [ref=e331]
+          - list [ref=e332]:
+            - listitem [ref=e333]:
+              - link "Legal notice" [ref=e334]:
+                - /url: pages/legal.html
+            - listitem [ref=e335]:
+              - link "Privacy" [ref=e336]:
+                - /url: pages/privacy.html
+            - listitem [ref=e337]:
+              - link "Cookie policy" [ref=e338]:
+                - /url: pages/cookies.html
+            - listitem [ref=e339]:
+              - link "Terms and conditions" [ref=e340]:
+                - /url: pages/terms.html
+            - listitem [ref=e341]:
+              - link "FAQ" [ref=e342]:
+                - /url: pages/faq.html
+        - generic [ref=e343]:
+          - heading "Follow Us" [level=4] [ref=e344]
+          - generic [ref=e345]:
+            - link "Facebook" [ref=e346]:
+              - /url: "#"
+              - img [ref=e347]
+            - link "Instagram" [ref=e349]:
+              - /url: "#"
+              - img [ref=e350]
+            - link "LinkedIn" [ref=e353]:
+              - /url: "#"
+              - img [ref=e354]
+            - link "Twitter" [ref=e358]:
+              - /url: "#"
+              - img [ref=e359]
+          - button "English" [ref=e362] [cursor=pointer]:
+            - generic [ref=e363]: English
+            - img [ref=e364]
+      - paragraph [ref=e367]: © 2024 Kamalyan Consulting. All rights reserved.
+```
